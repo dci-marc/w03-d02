@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM List Manipulator</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .list-group {
+            padding-bottom: 20px;
+        }
+        .list-group-item {
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .list-group-item:hover {
+            background-color: #e9ecef;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+    </style>
 </head>
 <body>
-    <ul id="bunch-of-numbers" class="list-group">
-        <li class="all-lis list-group-item">2</li>
-        <li class="all-lis list-group-item">3</li>
-        <li class="all-lis list-group-item">4</li>
-        <li class="all-lis list-group-item">5</li>
-        <li class="all-lis list-group-item">6</li>
-    </ul>
-    <button id="set-even-or-odd" class="btn btn-primary">
-        Set Even or Odd
-    </button>
+    <div class="container">
+        <ul id="bunch-of-numbers" class="list-group">
+            <li class="all-lis list-group-item">2</li>
+            <li class="all-lis list-group-item">3</li>
+            <li class="all-lis list-group-item">4</li>
+            <li class="all-lis list-group-item">5</li>
+            <li class="all-lis list-group-item">6</li>
+        </ul>
+        <button id="set-even-or-odd" class="btn btn-primary">
+            Set Even or Odd
+        </button>
+    </div>
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
