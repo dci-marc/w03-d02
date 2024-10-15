@@ -1,7 +1,7 @@
 class DOMListManipulator {
     constructor() {
         this.button = document.querySelector("#set-even-or-odd");
-        this.button.addEventListener("click", this.setEvenOrOdd.bind(this));
+        this.button.addEventListener("click", this.setEvenOrOdd.bind(this), { once: true });
     }
 
     setEvenOrOdd() {
